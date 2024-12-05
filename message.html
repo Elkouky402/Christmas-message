@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Christmas & New Year Greeting</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    /* Base styles */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Open Sans', sans-serif;
+      background-color: #1e1e1e;
+      color: #fff;
+      text-align: center;
+      overflow: hidden;
+    }
+
+    /* Main container */
+    .container {
+      width: 100%;
+      max-width: 600px;
+      margin: 20px auto;
+      background-color: #fff;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      color: #333;
+    }
+
+    h1 {
+      font-family: 'Roboto', sans-serif;
+      font-size: 30px;
+      color: #008cba;
+      margin-bottom: 15px;
+    }
+
+    .gif {
+      width: 80%;
+      max-width: 250px;
+      margin-top: 20px;
+      border-radius: 10px;
+    }
+
+    .greeting {
+      font-size: 18px;
+      line-height: 1.6;
+      margin-top: 10px;
+      padding: 0 10px;
+    }
+
+    /* Snowfall Effect */
+    .snowflake {
+      position: absolute;
+      top: -10px;
+      background: white;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      opacity: 0.8;
+      animation: snow 10s linear infinite;
+    }
+
+    @keyframes snow {
+      0% {
+        transform: translateY(-10px);
+      }
+      100% {
+        transform: translateY(100vh);
+      }
+    }
+
+    /* Call to Action button */
+    .cta {
+      margin-top: 20px;
+      background-color: #008cba;
+      color: #fff;
+      padding: 12px 25px;
+      border-radius: 25px;
+      font-size: 18px;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    .cta:hover {
+      background-color: #006f8f;
+    }
+
+    /* Footer */
+    .footer {
+      margin-top: 20px;
+      font-size: 16px;
+      color: #777;
+      font-style: italic;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 24px;
+      }
+
+      .greeting {
+        font-size: 16px;
+      }
+
+      .cta {
+        padding: 10px 20px;
+        font-size: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Snowfall Effect Script -->
+  <script>
+    const snowflakes = 50; // Number of snowflakes
+    const container = document.body;
+
+    for (let i = 0; i < snowflakes; i++) {
+      const snowflake = document.createElement('div');
+      snowflake.classList.add('snowflake');
+      snowflake.style.left = `${Math.random() * 100}vw`;
+      snowflake.style.animationDuration = `${Math.random() * 3 + 7}s`;
+      snowflake.style.animationDelay = `${Math.random() * 5}s`;
+      container.appendChild(snowflake);
+    }
+  </script>
+
+  <!-- Main content -->
+  <div class="container">
+    <h1>🎄 Merry Christmas & Happy New Year! 🎉</h1>
+
+    <p class="greeting">
+      As we come together to celebrate this festive season, I want to take a moment to express how truly grateful I am for each of you. ✨ Your love, support, and joy are the greatest gifts I could ever ask for. 🎁
+    </p>
+
+    <!-- Christmas Tree GIF -->
+    <img class="gif" src="https://media1.tenor.com/m/770ve8lMwXcAAAAd/christmas-tree-christmas.gif" alt="Christmas Tree">
+
+    <p class="greeting">
+      May the New Year bring peace, prosperity, and endless moments of happiness. 🌟 Here's to new beginnings, cherished memories, and a year filled with laughter, love, and success. 🥂
+    </p>
+    <p class="greeting">
+      Wishing you all the magic of Christmas and the promise of a bright and joyful 2024! 🎆
+    </p>
+
+    <!-- Call-to-Action Button -->
+    <a href="#" class="cta">Celebrate Together!</a>
+
+  </div>
+
+</body>
+</html>
